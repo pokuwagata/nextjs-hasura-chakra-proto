@@ -1,0 +1,8 @@
+- table:
+    schema: public
+    name: todo
+  configuration:
+    custom_root_fields: {}
+    custom_column_names:
+      updated_at: updatedAt
+      created_at: createdAt

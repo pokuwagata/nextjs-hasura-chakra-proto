@@ -1,0 +1,17 @@
+schema: http://localhost:8080/v1/graphql/
+documents:
+  - ./**/*.graphql
+overwrite: true
+generates:
+  ./type/generated/graphql.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-graphql-request
+    config:
+      skipTypename: false
+      withHooks: true
+      withHOC: false
+      withComponent: false
+      scalars:
+        timestamptz: string

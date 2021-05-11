@@ -1,0 +1,9 @@
+mutation addTodo($object: todo_insert_input!) {
+  insert_todo_one(object: $object) {
+    createdAt
+    id
+    status
+    text
+    updatedAt
+  }
+}

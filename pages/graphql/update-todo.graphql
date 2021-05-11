@@ -1,0 +1,9 @@
+mutation updateTodo($_set: todo_set_input!, $id: Int!) {
+  update_todo_by_pk(pk_columns: { id: $id }, _set: $_set) {
+    createdAt
+    id
+    status
+    text
+    updatedAt
+  }
+}

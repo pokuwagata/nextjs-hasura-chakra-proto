@@ -1,0 +1,9 @@
+mutation deleteTodo($id: Int!) {
+  delete_todo_by_pk(id: $id) {
+    createdAt
+    id
+    status
+    text
+    updatedAt
+  }
+}

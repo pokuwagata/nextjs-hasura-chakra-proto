@@ -1,0 +1,9 @@
+query getTodo {
+  todo {
+    createdAt
+    id
+    status
+    text
+    updatedAt
+  }
+}

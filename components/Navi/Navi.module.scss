@@ -1,0 +1,19 @@
+.navi {
+  display: flex;
+  padding: 3px 0;
+  border-bottom: 1px solid #d5d2cd;
+
+  &__button {
+    flex: 1 1 auto;
+    padding: 12px 0;
+    margin: 0;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid #efedeb;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}
